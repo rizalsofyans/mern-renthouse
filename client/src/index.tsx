@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 
-import { App } from './App';
-
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { Listings } from './sections/Listings';
 
 const client = new ApolloClient({
 	uri: '/api',
@@ -15,11 +14,10 @@ const client = new ApolloClient({
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
-
 root.render(
 	<ApolloProvider client={client}>
 		<React.StrictMode>
-			<App />
+			<Listings title="RenHouse Listings" />
 		</React.StrictMode>
 	</ApolloProvider>
 );

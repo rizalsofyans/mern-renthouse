@@ -10,7 +10,7 @@ export const typeDefs = gql`
     numOfGuests: Int!
     numOfBeds: Int!
     numOfBaths: Int!
-    rating: Float!
+    rating: Int!
   }
 
   type Query {
