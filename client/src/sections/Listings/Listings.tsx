@@ -55,7 +55,9 @@ export const Listings = ({ title }: Props) => {
 				return (
 					<li key={listing.id}>
 						{listing.title}
-						<button onClick={() => handleDeleteListing(listing.id)}>Delete</button>
+						<button onClick={() => handleDeleteListing(listing.id)}>
+							Delete
+						</button>
 					</li>
 				);
 			})}
