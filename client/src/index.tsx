@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 root.render(
 	<ApolloProvider client={client}>
 		<React.StrictMode>
-			<Listings title='RenHouse Listings' />
+			<Listings title="RenHouse Listings" />
 		</React.StrictMode>
 	</ApolloProvider>
 );
