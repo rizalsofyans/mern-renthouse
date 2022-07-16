@@ -13,11 +13,11 @@ const LISTINGS = `
             title
             image
             address
-			price
-			numOfGuests
-			numOfBeds
-			numOfBaths
-			rating
+            price
+            numOfGuests
+            numOfBeds
+            numOfBaths
+            rating
         }
     }
 `;
@@ -55,9 +55,7 @@ export const Listings = ({ title }: Props) => {
 				return (
 					<li key={listing.id}>
 						{listing.title}
-						<button onClick={() => deleteListing(listing.id)}>
-							Delete
-						</button>
+						<button onClick={() => deleteListing(listing.id)}>Delete</button>
 					</li>
 				);
 			})}
